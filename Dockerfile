@@ -7,7 +7,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y git
 
 # Clone the repository
-RUN git https://github.com/Z-Peppe/omiodio .
+RUN git clone https://github.com/Z-Peppe/omiodio .
 
 # Copy the local config.json file to the container
 
